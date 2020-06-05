@@ -70,6 +70,8 @@ console.log(cont);
     var imaginP = JSON.stringify(x.personality[0].children[3].percentile, null, 2);
     var intelec = JSON.stringify(x.personality[0].children[4].name, null, 2);
     var intelecP = JSON.stringify(x.personality[0].children[4].percentile, null, 2);
+    var desafAut = JSON.stringify(x.personality[0].children[5].name, null, 2);
+    var desafAutP= JSON.stringify(x.personality[0].children[5].percentile, null, 2);
     var y=Estructurador.cleansing(x);
     console.log(y);
 
@@ -84,7 +86,9 @@ console.log(cont);
   ima:imagin,
   imaP:imaginP,
   inte:intelec,
-  intep:intelecP
+  intep:intelecP,
+  desa:desafAut,
+  desap:desafAutP
 
     });//este es el view que se carga
 });
